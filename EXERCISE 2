@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP with HTML Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        .dynamic {
+            color: #007BFF;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My PHP Page</h1>
+        <p>This is a simple PHP and HTML integration example.</p>
+
+        <?php
+       
+        echo "<p>Today is: <span class='dynamic'>" . date('l, F j, Y') . "</span></p>";
+        echo "<p>The current time is: <span class='dynamic'>" . date('h:i A') . "</span></p>";
+
+       
+        $greeting = "Have a great day!";
+        echo "<p>Greeting message: <span class='dynamic'>" . $greeting . "</span></p>";
+        ?>
+        
+
+        
+    </div>
+</body>
+</html>
